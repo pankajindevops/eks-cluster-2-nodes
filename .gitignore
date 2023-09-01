@@ -12,6 +12,13 @@
 # README.md
 README.md.ACTUAL
 
+# terraform plan files
+tfplan
+*tfplan*
+app.tfplan
+
+# Don't include any .ACTUAL file
+*.ACTUAL
 
 # Crash log files
 crash.log

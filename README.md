@@ -12,6 +12,6 @@ EKS requires having 2 Public subnets
 
 The iam_role attaches to the EKS Cluster
 
-Name of the cluster = pc-eks
+Name of the cluster = eks-cluster
 
 eks_node_group has 2 EC2 Instances & kubectl-server
