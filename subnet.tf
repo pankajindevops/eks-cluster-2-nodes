@@ -1,3 +1,5 @@
+# Create 2 Public Subnets as needed to create an EKS Cluster
+
 resource "aws_subnet" "public-1" {
   vpc_id                  = aws_vpc.main.id
   cidr_block              = "10.0.1.0/24"
