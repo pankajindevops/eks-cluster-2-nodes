@@ -16,6 +16,7 @@ README.md.ACTUAL
 tfplan
 *tfplan*
 app.tfplan
+*app.tfplan*
 
 # Don't include any .ACTUAL file
 *.ACTUAL
