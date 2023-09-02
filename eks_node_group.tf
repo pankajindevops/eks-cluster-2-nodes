@@ -1,14 +1,14 @@
 
 resource "aws_instance" "kubectl-server" {
 
-  ami                         = "ami-053b0d53c279acc90"   # "ami-063e1495af50e6fd5"
+  ami = "ami-053b0d53c279acc90" # "ami-063e1495af50e6fd5"
   # key_name                   = ""
 
-  instance_type               = "t2.small"                # "t2.micro"
+  instance_type               = "t2.small" # "t2.micro"
   associate_public_ip_address = true
 
-  subnet_id                   = aws_subnet.public-1.id
-  vpc_security_group_ids      = [aws_security_group.allow_tls.id]
+  subnet_id              = aws_subnet.public-1.id
+  vpc_security_group_ids = [aws_security_group.allow_tls.id]
 
   user_data = file("kubectl-setup.sh")
   tags = {
