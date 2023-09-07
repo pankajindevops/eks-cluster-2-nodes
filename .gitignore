@@ -6,9 +6,6 @@
 *.tfstate
 *.tfstate.*
 
-# .terraform.lock.hcl file
-.terraform.lock.hcl
-
 # .pem files
 *.pem
 
